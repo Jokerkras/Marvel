@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorRed">
+    <ImageView
+        android:id="@+id/imageView_hero"
+        android:layout_centerHorizontal="true"
+        android:layout_height="200dp"
+        android:layout_width="150dp"/>
+</RelativeLayout>
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/cardMarginSide"
+        android:layout_marginRight="@dimen/cardMarginSide"
+        android:textSize="@dimen/heroName"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:layout_marginLeft="@dimen/cardMarginSide"
+        android:layout_marginRight="@dimen/cardMarginSide"
+        android:layout_marginTop="@dimen/cardMarginSide"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/textTitle"
+        />
+    <TextView
+        android:id="@+id/textView_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textCommon"
+        android:layout_marginLeft="@dimen/cardMarginSide"
+        android:layout_marginRight="@dimen/cardMarginSide"
+        android:layout_marginTop="@dimen/cardMarginSide"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textTitle"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:text="@string/comics"
+        android:layout_marginLeft="@dimen/cardMarginSide"
+        android:layout_marginRight="@dimen/cardMarginSide"
+        android:layout_marginTop="@dimen/cardMarginSide"/>
+
+    <view class="android.support.v7.widget.RecyclerView"
+        android:id="@+id/recycleView_Comics"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/horizontalRVHeight"
+        android:layout_marginTop="@dimen/cardMarginSide"
+        android:orientation="horizontal" />
+</LinearLayout>
